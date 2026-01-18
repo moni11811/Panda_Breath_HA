@@ -15,7 +15,51 @@ You can click the helper to view its **Entity ID**.
 
 ---
 
-### B) Build the Node-RED flow (exact nodes + what to fill)
+### B) Install Node-RED in Home Assistant (one-time setup)
+
+> Skip this section if Node-RED is already installed.
+
+#### 1) Enable the Add-on Store (if not already enabled)
+
+1. Go to **Home Assistant → Settings → Add-ons**
+2. If you do not see the Add-on Store, enable **Advanced Mode**:
+
+   * **Profile (bottom left) → Enable Advanced Mode**
+
+#### 2) Install Node-RED
+
+1. Go to **Settings → Add-ons → Add-on Store**
+2. Search for **Node-RED**
+3. Click **Node-RED**
+4. Click **Install**
+
+   * This may take a few minutes
+
+#### 3) Configure Node-RED (recommended settings)
+
+After installation:
+
+1. Open the **Configuration** tab
+2. Enable:
+
+   * **Start on boot**
+   * **Watchdog**
+   * **Auto update**
+3. (Optional but recommended) Enable **Side panel** for quick access
+
+Click **Save**.
+
+#### 4) Start Node-RED
+
+1. Go back to the **Info** tab
+2. Click **Start**
+3. Once running, click **Open Web UI**
+
+Node-RED is now installed and ready.
+
+---
+
+### C) Build the Node-RED flow (exact nodes + what to fill)
 
 Open Node-RED from:
 
@@ -82,3 +126,17 @@ Connect:
 #### 5) Deploy
 
 Click **Deploy** (top right).
+
+---
+
+### D) Test
+
+1. Go back to **Home Assistant**
+2. Toggle **Panda Breath Work**
+3. Confirm the WebSocket receiver reacts to `work_on: true / false`
+
+If you want, I can also add:
+
+* A **Troubleshooting** section
+* A **Copy/paste Node-RED flow JSON**
+* **Security notes** (auth, TLS, local-only access)
