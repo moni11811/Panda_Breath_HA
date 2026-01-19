@@ -134,9 +134,3 @@ Click **Deploy** (top right).
 1. Go back to **Home Assistant**
 2. Toggle **Panda Breath Work**
 3. Confirm the WebSocket receiver reacts to `work_on: true / false`
-
-If you want, I can also add:
-
-* A **Troubleshooting** section
-* A **Copy/paste Node-RED flow JSON**
-* **Security notes** (auth, TLS, local-only access)
