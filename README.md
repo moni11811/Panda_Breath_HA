@@ -1,3 +1,6 @@
+#This Repo is now archived as no further development will take place.
+
+
 ## How to install
 
 ### A) Create the switch in Home Assistant (1 minute)
